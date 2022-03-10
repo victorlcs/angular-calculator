@@ -1,0 +1,38 @@
+
+.login-card {
+    padding: 0 25px 0 25px;
+    width: 25vw;
+    height: 80vh;
+    background-color: white;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    border-radius: 5px;
+    .login-title {
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+        padding: 20px 0 10px 0;
+    }
+    form {
+        &>* {
+            width: 100%;
+        }
+        #forgot-pswd-link {
+            text-align: end;
+            font-weight: 500;
+        }
+        .login-btn{
+            display: block;
+            border-radius: 10px;
+            margin: 20px 0px 20px 0;
+            background-image: linear-gradient(to right, lightblue , purple);
+        }
+    }
+}
+
+.login-page {
+    height:100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+

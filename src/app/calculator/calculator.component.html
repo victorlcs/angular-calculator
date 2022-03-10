@@ -1,0 +1,11 @@
+<div id="cal-page">
+    <div id="cal-card">
+        <label id="display-txt">{{displayTxt}}</label>
+        <ng-container *ngFor="let a of calCtrl; let i = index">
+            <div>
+                <button mat-raised-button color="primary" class="cal-btn" *ngFor="let b of a; let i = index" [ngClass]="{'zero-btn':b === '0'}"
+                (click)="onClick(b)">{{b}}</button>
+            </div>
+        </ng-container>
+    </div>
+</div>
